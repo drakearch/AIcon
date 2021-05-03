@@ -1,5 +1,19 @@
 <resources>
     <string name="app_name">AIcon</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home_frag_tv_what_is">What is AIcon?</string>
+    <string name="home_frag_tv_what_is_resp">AIcon once again, as every year, makes the largest event of the Artificial Intelligence community in which passionate about learning, undertaking and innovating are in the same place to listen to industry experts who share their knowledge for hours.</string>
+    <string name="home_frag_tv_why">Why attend?</string>
+    <string name="home_frag_tv_why_resp">Because this only happens once every year.
+Because in Latin America, AIcon is the only event in the technology industry that brings together top-level professionals in one place.
+Because in this event you will meet people who in the future may be your friends, your colleagues, your collaborators and even your partners.
+Because in this version everything will revolve around the question: What skills make a great professional and prepare them for the jobs of the future? and together we will answer what this means. </string>
+    <string name="home_frag_tv_info">Information for AIcon 2021</string>
+    <string name="home_frag_tv_info_resp">
+        \u0009 &#8226; It is an exclusive event for our AI community.\n
+        \u0009 &#8226; (If you are passionate about this and you do not have an active subscription, subscribe to our event).\n
+        \u0009 &#8226; Date: Friday, December 31, 2021.\n
+        \u0009 &#8226; Place: Drake Arch Cultural Center.\n
+        \u0009 &#8226; Address: 123 False street N, San Francisco.
+    </string>
 </resources>
