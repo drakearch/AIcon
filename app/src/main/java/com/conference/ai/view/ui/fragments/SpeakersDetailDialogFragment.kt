@@ -1,4 +1,4 @@
-package com.conference.ai.ui.fragments
+package com.conference.ai.view.ui.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

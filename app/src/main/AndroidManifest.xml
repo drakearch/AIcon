@@ -9,8 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AIcon">
-        <activity android:name=".ui.activities.SplashScreenActivity"></activity>
-        <activity android:name=".MainActivity">
+        <activity android:name="com.conference.ai.view.ui.activities.SplashScreenActivity"></activity>
+        <activity android:name=".view.ui.activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
