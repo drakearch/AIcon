@@ -1,6 +1,6 @@
 package com.conference.ai.view.adapter
 
-import android.telecom.Conference
+import com.conference.ai.model.Conference
 
 interface ScheduleListener {
     fun onConferenceClicked(conference: Conference, position: Int)
