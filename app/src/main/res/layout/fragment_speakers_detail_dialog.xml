@@ -8,7 +8,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <Toolbar
-            android:id="@+id/toolbarConference"
+            android:id="@+id/toolbarSpeaker"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
     </com.google.android.material.appbar.AppBarLayout>
@@ -48,10 +48,10 @@
                             android:gravity="center_horizontal"
                             android:layout_centerInParent="true"/>
                         <TextView
-                            android:id="@+id/tvSpeakerDetailJobTitle"
+                            android:id="@+id/tvSpeakerDetailJobtitle"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="JobTitle"
+                            android:text="Jobtitle"
                             android:textSize="@dimen/titleSize"
                             android:textColor="@color/colorPrimary"
                             android:gravity="center_horizontal"
