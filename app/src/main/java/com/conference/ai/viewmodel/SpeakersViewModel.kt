@@ -1,12 +1,13 @@
 package com.conference.ai.viewmodel
 
 import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
 import com.conference.ai.model.Speaker
 import com.conference.ai.network.Callback
 import com.conference.ai.network.FirestoreService
 import java.lang.Exception
 
-class SpeakersViewModel {
+class SpeakersViewModel: ViewModel() {
     val firestoreService = FirestoreService()
     var listSpeakers: MutableLiveData<List<Speaker>> = MutableLiveData()
     var isLoading = MutableLiveData<Boolean>()
