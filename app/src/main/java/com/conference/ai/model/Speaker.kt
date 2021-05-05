@@ -1,6 +1,8 @@
 package com.conference.ai.model
 
-class Speaker {
+import java.io.Serializable
+
+class Speaker: Serializable {
     var name = ""
     var jobtitle = ""
     var workplace = ""
