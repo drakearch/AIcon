@@ -20,7 +20,9 @@
                 android:layout_height="wrap_content"
                 app:cardCornerRadius="@dimen/cardCornerRadius"
                 app:cardElevation="@dimen/cardElevation"
-                android:layout_margin="15dp">
+                android:layout_marginTop="@dimen/cardMargin"
+                android:layout_marginLeft="@dimen/cardMargin"
+                android:layout_marginRight="@dimen/cardMargin">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -38,14 +40,14 @@
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
-                        android:background="@color/colorPrimary"/>
+                        android:background="@color/white_700"/>
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
                         android:textSize="@dimen/titleSize"
-                        android:textColor="@color/colorPrimaryDark"
+                        android:textColor="@color/blue_500"
                         android:layout_marginRight="@dimen/homeSubtitleMargin"
                         android:layout_marginLeft="@dimen/homeSubtitleMargin"
                         android:layout_marginTop="@dimen/homeSubtitleMargin"
@@ -54,14 +56,14 @@
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
-                        android:background="@color/colorPrimary"
+                        android:background="@color/white_700"
                         android:layout_marginTop="10dp"/>
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textSize="@dimen/homeSubtitleSize"
-                        android:textColor="@color/colorPrimary"
+                        android:textColor="@color/blue_700"
                         android:layout_marginRight="@dimen/homeSubtitleMargin"
                         android:layout_marginLeft="@dimen/homeSubtitleMargin"
                         android:layout_marginTop="@dimen/homeSubtitleMargin"
@@ -81,7 +83,9 @@
                 android:layout_height="wrap_content"
                 app:cardCornerRadius="@dimen/cardCornerRadius"
                 app:cardElevation="@dimen/cardElevation"
-                android:layout_margin="15dp">
+                android:layout_marginTop="@dimen/cardMargin"
+                android:layout_marginLeft="@dimen/cardMargin"
+                android:layout_marginRight="@dimen/cardMargin">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -98,14 +102,14 @@
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
-                        android:background="@color/colorPrimary"/>
+                        android:background="@color/white_700"/>
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
                         android:textSize="@dimen/titleSize"
-                        android:textColor="@color/colorPrimaryDark"
+                        android:textColor="@color/blue_500"
                         android:layout_marginRight="@dimen/homeSubtitleMargin"
                         android:layout_marginLeft="@dimen/homeSubtitleMargin"
                         android:layout_marginTop="@dimen/homeSubtitleMargin"
@@ -114,14 +118,14 @@
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
-                        android:background="@color/colorPrimary"
+                        android:background="@color/white_700"
                         android:layout_marginTop="10dp"/>
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textSize="@dimen/homeSubtitleSize"
-                        android:textColor="@color/colorPrimary"
+                        android:textColor="@color/blue_700"
                         android:layout_marginRight="@dimen/homeSubtitleMargin"
                         android:layout_marginLeft="@dimen/homeSubtitleMargin"
                         android:layout_marginTop="@dimen/homeSubtitleMargin"
@@ -143,7 +147,9 @@
                 android:layout_height="wrap_content"
                 app:cardCornerRadius="@dimen/cardCornerRadius"
                 app:cardElevation="@dimen/cardElevation"
-                android:layout_margin="15dp">
+                android:layout_marginTop="@dimen/cardMargin"
+                android:layout_marginLeft="@dimen/cardMargin"
+                android:layout_marginRight="@dimen/cardMargin">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -160,14 +166,14 @@
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
-                        android:background="@color/colorPrimary"/>
+                        android:background="@color/white_700"/>
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
                         android:textSize="@dimen/titleSize"
-                        android:textColor="@color/colorPrimaryDark"
+                        android:textColor="@color/blue_500"
                         android:layout_marginRight="@dimen/homeSubtitleMargin"
                         android:layout_marginLeft="@dimen/homeSubtitleMargin"
                         android:layout_marginTop="@dimen/homeSubtitleMargin"
@@ -176,14 +182,14 @@
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
-                        android:background="@color/colorPrimary"
+                        android:background="@color/white_700"
                         android:layout_marginTop="10dp"/>
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textSize="@dimen/homeSubtitleSize"
-                        android:textColor="@color/colorPrimary"
+                        android:textColor="@color/blue_700"
                         android:layout_marginRight="@dimen/homeSubtitleMargin"
                         android:layout_marginLeft="@dimen/homeSubtitleMargin"
                         android:layout_marginTop="@dimen/homeSubtitleMargin"

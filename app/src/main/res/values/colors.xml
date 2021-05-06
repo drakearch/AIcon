@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#252c77</color>
-    <color name="colorPrimaryDark">#121639</color>
-    <color name="colorAccent">#4da1e0</color>
+    <color name="blue_200">#4DA1E0</color>
+    <color name="blue_500">#252C77</color>
+    <color name="blue_700">#13173E</color>
+    <color name="white_200">#FAFAFF</color>
+    <color name="white_500">#ECEBE4</color>
+    <color name="white_700">#CCC9B7</color>
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
