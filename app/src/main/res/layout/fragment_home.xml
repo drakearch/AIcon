@@ -92,7 +92,8 @@
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/homeImageViewHeight"
-                        android:src="@drawable/deep_learning_presentation"/>
+                        android:src="@drawable/deep_learning_presentation"
+                        android:scaleType="centerCrop"/>
 
                     <View
                         android:layout_width="match_parent"
@@ -153,7 +154,8 @@
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/homeImageViewHeight"
-                        android:src="@drawable/ai_branches_banner"/>
+                        android:src="@drawable/ai_branches_banner"
+                        android:scaleType="centerCrop"/>
 
                     <View
                         android:layout_width="match_parent"

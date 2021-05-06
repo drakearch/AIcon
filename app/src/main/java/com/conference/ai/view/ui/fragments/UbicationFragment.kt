@@ -8,16 +8,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat
+import androidx.navigation.fragment.findNavController
 import com.conference.ai.R
 import com.conference.ai.model.Ubication
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
-import com.google.android.gms.maps.model.BitmapDescriptor
-import com.google.android.gms.maps.model.BitmapDescriptorFactory
-import com.google.android.gms.maps.model.LatLng
-import com.google.android.gms.maps.model.MarkerOptions
+import com.google.android.gms.maps.model.*
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -29,7 +27,7 @@ private const val ARG_PARAM2 = "param2"
  * Use the [UbicationFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class UbicationFragment : Fragment(), OnMapReadyCallback {
+class UbicationFragment : Fragment(), OnMapReadyCallback, GoogleMap.OnMarkerClickListener {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -86,9 +84,17 @@ class UbicationFragment : Fragment(), OnMapReadyCallback {
         val markerOptions = MarkerOptions()
         markerOptions.position(centerMap)
         markerOptions.title("AIcon 2021")
-        val bitmapDraw = context?.applicationContext?.let { ContextCompat.getDrawable(it, R.drawable.aicon_logo_horizontal) } as BitmapDrawable
+        val bitmapDraw = context?.applicationContext?.let { ContextCompat.getDrawable(it, R.drawable.aicon_logo_vertical_square) } as BitmapDrawable
         val smallMarker = Bitmap.createScaledBitmap(bitmapDraw.bitmap, 150, 150, false)
         markerOptions.icon(BitmapDescriptorFactory.fromBitmap(smallMarker))
         googleMap?.addMarker(markerOptions)
+        googleMap?.setOnMarkerClickListener(this)
+
+        googleMap?.setMapStyle(MapStyleOptions.loadRawResourceStyle(context, R.raw.custom_map))
+    }
+
+    override fun onMarkerClick(p0: Marker?): Boolean {
+        findNavController().navigate(R.id.ubicationDetailDialogFragment)
+        return true
     }
 }
