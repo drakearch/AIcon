@@ -15,10 +15,10 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <View
-            android:background="@color/colorPrimary"
+            android:background="?attr/colorPrimaryVariant"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:alpha="0.75"/>
+            android:alpha="0.9"/>
         <ProgressBar
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

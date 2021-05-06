@@ -46,7 +46,7 @@
                             android:layout_height="wrap_content"
                             android:text="Speaker Name"
                             android:textSize="@dimen/titleSize"
-                            android:textColor="@color/colorAccent"
+                            android:textColor="?attr/colorOnPrimary"
                             android:textStyle="bold"
                             android:gravity="center_horizontal"
                             android:layout_centerInParent="true"/>
@@ -56,7 +56,7 @@
                             android:layout_height="wrap_content"
                             android:text="Jobtitle"
                             android:textSize="@dimen/titleSize"
-                            android:textColor="@color/colorPrimary"
+                            android:textColor="?attr/colorPrimary"
                             android:gravity="center_horizontal"
                             android:layout_centerInParent="true"
                             android:layout_margin="5dp"/>
@@ -67,7 +67,7 @@
                             android:text="Workplace"
                             android:textStyle="bold"
                             android:textSize="@dimen/titleSize"
-                            android:textColor="@color/colorPrimary"
+                            android:textColor="?attr/colorPrimary"
                             android:gravity="center_horizontal"
                             android:layout_margin="5dp"/>
                         <ImageView
@@ -83,7 +83,7 @@
                             android:layout_height="wrap_content"
                             android:text="Speaker description"
                             android:textSize="@dimen/titleSize"
-                            android:textColor="@color/colorPrimary"
+                            android:textColor="?attr/colorPrimaryVariant"
                             android:gravity="center_horizontal"
                             android:layout_margin="5dp"/>
 

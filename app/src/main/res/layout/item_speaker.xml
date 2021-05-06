@@ -30,7 +30,7 @@
             android:layout_height="wrap_content"
             android:textStyle="bold"
             android:textSize="@dimen/titleSize"
-            android:textColor="@color/colorPrimaryDark"
+            android:textColor="?attr/colorPrimary"
             android:text="Speaker Name"
             android:gravity="center_horizontal"/>
 
@@ -39,7 +39,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="@dimen/homeSubtitleSize"
-            android:textColor="@color/colorAccent"
+            android:textColor="?attr/colorOnPrimary"
             android:gravity="center_horizontal"
             android:text="Speaker job"/>
 

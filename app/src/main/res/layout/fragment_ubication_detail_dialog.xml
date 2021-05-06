@@ -48,14 +48,14 @@
                             android:layout_height="wrap_content"
                             android:text="AIcon Place"
                             android:textSize="@dimen/titleSize"
-                            android:textColor="@color/colorPrimary"
+                            android:textColor="?attr/colorOnPrimary"
                             android:gravity="center_horizontal"
                             android:layout_centerInParent="true"
-                            android:layout_margin="5dp"/>
+                            android:layout_margin="20dp"/>
                         <View
                             android:layout_width="match_parent"
                             android:layout_height="1dp"
-                            android:background="@color/colorPrimary"/>
+                            android:background="?attr/colorSecondaryVariant"/>
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -72,7 +72,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="Address"
                                 android:textSize="@dimen/homeSubtitleSize"
-                                android:textColor="@color/colorPrimary"
+                                android:textColor="?attr/colorPrimary"
                                 android:gravity="left"
                                 android:layout_margin="5dp"/>
 
@@ -81,7 +81,7 @@
                         <View
                             android:layout_width="match_parent"
                             android:layout_height="1dp"
-                            android:background="@color/colorPrimary"/>
+                            android:background="?attr/colorSecondaryVariant"/>
 
                         <LinearLayout
                             android:id="@+id/llUbicationDetailPhone"
@@ -99,7 +99,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="Phone"
                                 android:textSize="@dimen/homeSubtitleSize"
-                                android:textColor="@color/colorPrimary"
+                                android:textColor="?attr/colorPrimary"
                                 android:gravity="left"
                                 android:layout_margin="5dp"/>
 
@@ -108,7 +108,7 @@
                         <View
                             android:layout_width="match_parent"
                             android:layout_height="1dp"
-                            android:background="@color/colorPrimary"/>
+                            android:background="?attr/colorSecondaryVariant"/>
 
                         <LinearLayout
                             android:id="@+id/llUbicationDetailWebsite"
@@ -126,16 +126,11 @@
                                 android:layout_height="wrap_content"
                                 android:text="Website"
                                 android:textSize="@dimen/homeSubtitleSize"
-                                android:textColor="@color/colorPrimary"
+                                android:textColor="?attr/colorPrimary"
                                 android:gravity="left"
                                 android:layout_margin="5dp"/>
 
                         </LinearLayout>
-
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="1dp"
-                            android:background="@color/colorPrimary"/>
 
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
