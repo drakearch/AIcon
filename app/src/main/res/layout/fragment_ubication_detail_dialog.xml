@@ -13,128 +13,95 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
     </com.google.android.material.appbar.AppBarLayout>
-
-    <FrameLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
-        <ScrollView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <LinearLayout
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:contentDescription="Deep Learning presentation"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/aiLogoHeight"
-                    android:src="@drawable/deep_learning_presentation"
-                    android:scaleType="centerCrop"/>
+                android:layout_height="@dimen/aiLogoHeight"
+                android:src="@drawable/deep_learning_presentation"
+                android:scaleType="centerCrop"/>
 
-                <androidx.cardview.widget.CardView
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/cardCornerRadius"
+                android:elevation="@dimen/cardElevation"
+                android:layout_margin="@dimen/cardMargin">
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:cardCornerRadius="@dimen/cardCornerRadius"
-                    android:elevation="@dimen/cardElevation"
-                    android:layout_margin="@dimen/cardMargin">
-                    <LinearLayout
+                    android:orientation="vertical"
+                    android:background="@drawable/shape_paragraph">
+                    <TextView
+                        android:id="@+id/tvUbicationDetailPlace"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:background="@drawable/shape_paragraph">
-                        <TextView
-                            android:id="@+id/tvUbicationDetailPlace"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="AIcon Place"
-                            android:textSize="@dimen/titleSize"
-                            android:textColor="?attr/colorOnPrimary"
-                            android:gravity="center_horizontal"
-                            android:layout_centerInParent="true"
-                            android:layout_margin="20dp"/>
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="1dp"
-                            android:background="?attr/colorSecondaryVariant"/>
+                        android:text="AIcon Place"
+                        android:textSize="@dimen/titleSize"
+                        android:textColor="?attr/colorOnPrimary"
+                        android:gravity="center_horizontal"
+                        android:layout_margin="@dimen/titleMargin"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="?attr/colorSecondaryVariant"/>
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:padding="20dp">
-                            <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:src="@drawable/ic_pin"/>
-                            <TextView
-                                android:id="@+id/tvUbicationDetailAddress"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="Address"
-                                android:textSize="@dimen/homeSubtitleSize"
-                                android:textColor="?attr/colorPrimary"
-                                android:gravity="left"
-                                android:layout_margin="5dp"/>
+                    <TextView
+                        android:padding="20dp"
+                        android:id="@+id/tvUbicationDetailAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Address"
+                        android:textSize="@dimen/homeSubtitleSize"
+                        android:textColor="?attr/colorPrimary"
+                        android:gravity="start"
+                        android:drawablePadding="@dimen/cardMargin"
+                        app:drawableStartCompat="@drawable/ic_pin"/>
 
-                        </LinearLayout>
 
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="1dp"
-                            android:background="?attr/colorSecondaryVariant"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="?attr/colorSecondaryVariant"/>
 
-                        <LinearLayout
-                            android:id="@+id/llUbicationDetailPhone"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:padding="20dp">
-                            <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:src="@drawable/ic_phone"/>
-                            <TextView
-                                android:id="@+id/tvUbicationDetailPhone"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="Phone"
-                                android:textSize="@dimen/homeSubtitleSize"
-                                android:textColor="?attr/colorPrimary"
-                                android:gravity="left"
-                                android:layout_margin="5dp"/>
+                    <TextView
+                        android:id="@+id/tvUbicationDetailPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Phone"
+                        android:textSize="@dimen/homeSubtitleSize"
+                        android:textColor="?attr/colorPrimary"
+                        android:gravity="start"
+                        android:padding="20dp"
+                        android:drawablePadding="@dimen/cardMargin"
+                        app:drawableStartCompat="@drawable/ic_phone"/>
 
-                        </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="?attr/colorSecondaryVariant"/>
 
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="1dp"
-                            android:background="?attr/colorSecondaryVariant"/>
+                    <TextView
+                        android:id="@+id/tvUbicationDetailWebsite"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Website"
+                        android:textSize="@dimen/homeSubtitleSize"
+                        android:textColor="?attr/colorPrimary"
+                        android:gravity="start"
+                        android:padding="20dp"
+                        android:drawablePadding="@dimen/cardMargin"
+                        app:drawableStartCompat="@drawable/ic_link"/>
 
-                        <LinearLayout
-                            android:id="@+id/llUbicationDetailWebsite"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:padding="20dp">
-                            <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:src="@drawable/ic_link"/>
-                            <TextView
-                                android:id="@+id/tvUbicationDetailWebsite"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="Website"
-                                android:textSize="@dimen/homeSubtitleSize"
-                                android:textColor="?attr/colorPrimary"
-                                android:gravity="left"
-                                android:layout_margin="5dp"/>
-
-                        </LinearLayout>
-
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-            </LinearLayout>
-        </ScrollView>
-    </FrameLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

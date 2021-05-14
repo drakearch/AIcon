@@ -12,7 +12,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <androidx.cardview.widget.CardView
@@ -159,7 +159,7 @@
 
                     <ImageView
                         android:layout_width="match_parent"
-                        android:layout_height="@dimen/homeImageViewHeight"
+                        android:layout_height="120dp"
                         android:src="@drawable/ai_branches_banner"
                         android:scaleType="centerCrop"/>
 

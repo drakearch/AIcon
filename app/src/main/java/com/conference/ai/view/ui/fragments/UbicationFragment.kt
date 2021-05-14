@@ -80,7 +80,6 @@ class UbicationFragment : Fragment(), OnMapReadyCallback, GoogleMap.OnMarkerClic
         val zoom = 16f
         val centerMap = LatLng(ubication.latitude, ubication.longitude)
         googleMap?.animateCamera(CameraUpdateFactory.newLatLngZoom(centerMap, zoom))
-        val centerMark = LatLng(ubication.latitude, ubication.longitude)
         val markerOptions = MarkerOptions()
         markerOptions.position(centerMap)
         markerOptions.title("AIcon 2021")
