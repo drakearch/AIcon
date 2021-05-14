@@ -7,8 +7,12 @@
     <dimen name="cardMargin">15dp</dimen>
     <dimen name="homeImageViewHeight">180dp</dimen>
     <dimen name="titleSize">20sp</dimen>
+    <dimen name="titleMargin">20dp</dimen>
     <dimen name="homeSubtitleMargin">10dp</dimen>
     <dimen name="homeSubtitleSize">15sp</dimen>
     <dimen name="scheduleItemTitle">30sp</dimen>
     <dimen name="scheduleItemSubtitle">20sp</dimen>
+    <dimen name="itemSpeakerMargin">10dp</dimen>
+    <dimen name="itemSpeakerImageSize">100dp</dimen>
+    <dimen name="itemScheduleMargin">10dp</dimen>
 </resources>

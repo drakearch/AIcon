@@ -63,14 +63,14 @@ class UbicationDetailDialogFragment : DialogFragment() {
         tvUbicationDetailPhone.text = ubication.phone
         tvUbicationDetailWebsite.text = ubication.website
 
-        llUbicationDetailPhone.setOnClickListener {
+        tvUbicationDetailPhone.setOnClickListener {
             val intent = Intent(Intent.ACTION_DIAL).apply {
                 data = Uri.parse("tel:${ubication.phone}")
             }
             startActivity(intent)
         }
 
-        llUbicationDetailWebsite.setOnClickListener {
+        tvUbicationDetailWebsite.setOnClickListener {
             val intent = Intent(Intent.ACTION_VIEW)
             intent.data = Uri.parse(ubication.website)
             startActivity(intent)

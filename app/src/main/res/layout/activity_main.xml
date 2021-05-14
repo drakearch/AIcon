@@ -16,6 +16,7 @@
             android:id="@+id/tbMainToolbar">
 
             <ImageView
+                android:contentDescription="AIcon logo"
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/toolbarHeight"
                 android:src="@drawable/aicon_logo_horizontal"/>

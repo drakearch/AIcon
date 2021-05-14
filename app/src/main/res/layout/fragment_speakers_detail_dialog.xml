@@ -13,83 +13,80 @@
             android:layout_height="wrap_content"/>
     </com.google.android.material.appbar.AppBarLayout>
 
-    <FrameLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
 
-                <androidx.cardview.widget.CardView
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/cardCornerRadius"
+                android:elevation="@dimen/cardElevation"
+                android:background="@drawable/shape_paragraph"
+                android:layout_margin="@dimen/cardMargin">
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:cardCornerRadius="@dimen/cardCornerRadius"
-                    android:elevation="@dimen/cardElevation"
-                    android:layout_margin="@dimen/cardMargin">
-                    <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginBottom="10dp"
+                    android:padding="10dp">
+                    <ImageView
+                        android:contentDescription="Speaker Name"
+                        android:id="@+id/ivSpeakerDetailImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/homeImageViewHeight"
+                        android:src="@mipmap/ic_launcher"
+                        android:layout_margin="10dp"/>
+                    <TextView
+                        android:id="@+id/tvSpeakerDetailName"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:layout_marginBottom="10dp"
-                        android:background="@drawable/shape_paragraph"
-                        android:padding="10dp">
-                        <ImageView
-                            android:id="@+id/ivSpeakerDetailImage"
-                            android:layout_width="match_parent"
-                            android:layout_height="@dimen/homeImageViewHeight"
-                            android:src="@mipmap/ic_launcher"
-                            android:layout_margin="10dp"/>
-                        <TextView
-                            android:id="@+id/tvSpeakerDetailName"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Speaker Name"
-                            android:textSize="@dimen/titleSize"
-                            android:textColor="?attr/colorOnPrimary"
-                            android:textStyle="bold"
-                            android:gravity="center_horizontal"
-                            android:layout_centerInParent="true"/>
-                        <TextView
-                            android:id="@+id/tvSpeakerDetailJobtitle"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Jobtitle"
-                            android:textSize="@dimen/titleSize"
-                            android:textColor="?attr/colorPrimary"
-                            android:gravity="center_horizontal"
-                            android:layout_centerInParent="true"
-                            android:layout_margin="5dp"/>
-                        <TextView
-                            android:id="@+id/tvSpeakerDetailWorkplace"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Workplace"
-                            android:textStyle="bold"
-                            android:textSize="@dimen/titleSize"
-                            android:textColor="?attr/colorPrimary"
-                            android:gravity="center_horizontal"
-                            android:layout_margin="5dp"/>
-                        <ImageView
-                            android:id="@+id/ivSpeakerDetailTwitter"
-                            android:layout_width="30dp"
-                            android:layout_height="30dp"
-                            android:layout_gravity="center_horizontal"
-                            android:src="@drawable/ic_twitter_logo"
-                            android:layout_margin="10dp"/>
-                        <TextView
-                            android:id="@+id/tvSpeakerDetailBiography"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Speaker description"
-                            android:textSize="@dimen/titleSize"
-                            android:textColor="?attr/colorPrimaryVariant"
-                            android:gravity="center_horizontal"
-                            android:layout_margin="5dp"/>
+                        android:text="Speaker Name"
+                        android:textSize="@dimen/titleSize"
+                        android:layout_margin="@dimen/titleMargin"
+                        android:textColor="?attr/colorOnPrimary"
+                        android:textStyle="bold"
+                        android:gravity="center_horizontal"/>
+                    <TextView
+                        android:id="@+id/tvSpeakerDetailJobtitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Jobtitle"
+                        android:textSize="@dimen/titleSize"
+                        android:textColor="?attr/colorPrimary"
+                        android:gravity="center_horizontal"
+                        android:layout_margin="5dp"/>
+                    <TextView
+                        android:id="@+id/tvSpeakerDetailWorkplace"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Workplace"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/titleSize"
+                        android:textColor="?attr/colorPrimary"
+                        android:gravity="center_horizontal"
+                        android:layout_margin="5dp"/>
+                    <ImageView
+                        android:id="@+id/ivSpeakerDetailTwitter"
+                        android:contentDescription="Twitter"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_twitter_logo"
+                        android:layout_margin="10dp"/>
+                    <TextView
+                        android:id="@+id/tvSpeakerDetailBiography"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Speaker description"
+                        android:textSize="@dimen/titleSize"
+                        android:textColor="?attr/colorPrimaryVariant"
+                        android:gravity="center_horizontal"
+                        android:layout_margin="5dp"/>
 
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-        </ScrollView>
-    </FrameLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+    </ScrollView>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
 

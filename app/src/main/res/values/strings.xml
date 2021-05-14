@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">AIcon</string>
-    <!-- TODO: Remove or change this placeholder text -->
+
     <string name="home_frag_tv_what_is">What is AIcon?</string>
     <string name="home_frag_tv_what_is_resp">AIcon once again, as every year, makes the largest event of the Artificial Intelligence community in which passionate about learning, undertaking and innovating are in the same place to listen to industry experts who share their knowledge for hours.</string>
     <string name="home_frag_tv_why">Why attend?</string>
@@ -12,8 +12,8 @@ Because in this version everything will revolve around the question: What skills
     <string name="home_frag_tv_info_resp">
         \u0009 &#8226; It is an exclusive event for our AI community.\n
         \u0009 &#8226; (If you are passionate about this and you do not have an active subscription, subscribe to our event).\n
-        \u0009 &#8226; Date: Friday, December 31, 2021.\n
-        \u0009 &#8226; Place: Drake Arch Cultural Center.\n
-        \u0009 &#8226; Address: 123 False street N, San Francisco.
+        \u0009 &#8226; Date: Monday, December 6, 2021.\n
+        \u0009 &#8226; Place: Drake Arch Arts Center.\n
+        \u0009 &#8226; Address: 401 Van Ness Ave, San Francisco, CA 94102, USA.
     </string>
 </resources>
