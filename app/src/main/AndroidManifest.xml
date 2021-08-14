@@ -11,7 +11,7 @@
         android:theme="@style/Theme.AIcon">
 
         <meta-data android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyAWJqykEK***********RlHH3wdk7w5zI"/>
+            android:value="***************************************"/>
 
         <activity android:name="com.conference.ai.view.ui.activities.SplashScreenActivity">
             <intent-filter>
